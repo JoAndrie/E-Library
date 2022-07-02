@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#background {
+    background-image: linear-gradient(rgba(83, 67, 64, 0.5), rgba(83, 67, 64, 0.5)), url(bg.jpg);
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    background-attachment: fixed;
+}
+
+nav {
+    display: flex;
+    padding: 1% 4%;
+    justify-content: space-between;
+    align-content: center;
+}
+
+nav img {
+    width: 250px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: left;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #FFFBE9;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.text-box h1 {
+    font-size: 55px;
+    text-shadow: 3px 3px #534340;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 2px 2px #534340;
+}
+
+
+/*---------log in------*/
+
+#login {
+    display: flex;
+    justify-content: right;
+    margin-top: -50px;
+}
+
+#login .input_login {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+#b {
+    display: flex;
+    width: 100px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#b input {
+    background-color: #C5D8A4;
+    color: black;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 10px;
+}
+
+#login div p {
+    color: white;
+    font-size: 12px;
+}
+
+#login div p span {
+    opacity: 0.9;
+}
+
+#login div p span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#login div input {
+    width: 267px;
+    height: 7vh;
+    padding-bottom: 4px;
+    font-size: 14px;
+    margin-right: 20px;
+
+    border-radius: 5px;
+}
+.input_login input{
+    text-indent: 5px;
+
+}
+
+#sub {
+    height: 20px;
+    widows: inherit;
+}
+
+/*---- search box ----*/
+
+.search-box {
+    background: #fff;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 18px 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.search-box input {
+    background: transparent;
+    width: 600px;
+    border: 0;
+    outline: none;
+}
+
+.search-box button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    color: gray;
+}
+
+
+/*--- register ---*/
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+
+/*--- login form and register form ---*/
+
+.form-container {
+    min-height: 76vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 20px;
+    padding-right: 60px;
+    padding-top: 18px;
+    padding-bottom: 46px;
+}
+
+.form-container form {
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    background: #fff;
+    text-align: center;
+    width: 450px;
+}
+
+.form-container form h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form-container form input {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 17px;
+    margin: 8px 0;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.form-container form .form-btn {
+    background: #8B9A46;
+    color: black;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form-container form .form-btn:hover {
+    background: #BB9981;
+    color: #fff;
+}
+
+.form-container form p {
+    margin-top: 10px;
+    font-size: 17px;
+    color: #333;
+}
+
+.form-container form p a {
+    color: #FFB72B;
+}
+
+.form-container form .error-msg {
+    margin: 10px 0;
+    display: block;
+    background: crimson;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+/*---- toggle ----*/
+
+nav .fa-solid {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 50px;
+    }
+    .text-box p {
+        margin: 5px 0 20px;
+        font-size: 17px;
+    }
+    #background {
+        background-position: center;
+        background-position: cover;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #C5D8A4;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa-solid {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+    .search-box {
+        padding: 10px 20px;
+    }
+    .search-box input {
+        width: 230px;
+    }
+}

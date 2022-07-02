@@ -1,0 +1,17 @@
+practice_admin.html
+
+submission.html
+
+add_books.html
+
+manage_books.html
+
+add_authors.html
+
+manage_authors.html
+
+add_subject.html
+
+manage_subject.html
+
+manage_user.html
